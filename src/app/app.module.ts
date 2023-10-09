@@ -14,13 +14,16 @@ import { MatInputModule } from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {NgIf} from "@angular/common";
+import { HomeComponent } from './views/home/home.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import {NgIf} from "@angular/common";
     MatIconModule,
     MatInputModule,
     MatButtonModule,
+    MatToolbarModule,
     ReactiveFormsModule,
     FormsModule,
     NgIf,

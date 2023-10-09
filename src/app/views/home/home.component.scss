@@ -1,0 +1,20 @@
+.toolbar {
+  padding: 35px;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #37AF24;
+  padding-right: 15px;
+}
+
+.toolbar > a,
+.toolbar > a:visited {
+  text-decoration: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
