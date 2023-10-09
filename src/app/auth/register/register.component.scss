@@ -1,0 +1,43 @@
+.main {
+  max-width: 500px;
+  padding-top: 150px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  align-self: center;
+  color: #37AF24;
+}
+
+mat-card-title {
+  font-size: 1.2rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 0.9rem;
+}
+
+.action-button {
+  align-self: center;
+  width: 125px;
+}
+
+.redirect-button,
+.redirect-button:visited {
+  text-decoration: none;
+  color: #0B44D8;
+}
