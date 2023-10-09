@@ -28,4 +28,16 @@ mat-card-title {
   flex-direction: row;
   align-items: center;
   padding-left: 15px;
+  font-size: 0.9rem;
+}
+
+.action-button {
+  align-self: center;
+  width: 125px;
+}
+
+.redirect-button,
+.redirect-button:visited {
+  text-decoration: none;
+  color: #0B44D8;
 }
