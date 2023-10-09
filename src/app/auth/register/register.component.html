@@ -21,7 +21,7 @@
           </button>
           <mat-error *ngIf="validations.password">{{validations.getPasswordErrorMessage()}}</mat-error>
         </mat-form-field>
-        <a class="action-button" mat-raised-button color="accent">Registrarse</a>
+        <a class="action-button" mat-raised-button color="accent" routerLink="/login">Registrarse</a>
       </mat-card-content>
       <mat-card-footer class="card-footer">
         <p>¿Ya tienes una cuenta?</p>

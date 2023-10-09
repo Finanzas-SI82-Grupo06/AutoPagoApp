@@ -31,9 +31,11 @@ mat-card-title {
   font-size: 0.9rem;
 }
 
-.action-button {
+.action-button,
+.action-button:visited {
   align-self: center;
   width: 125px;
+  text-decoration: none;
 }
 
 .redirect-button,
