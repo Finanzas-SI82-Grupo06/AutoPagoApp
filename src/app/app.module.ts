@@ -7,15 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material/card";
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { NotFoundComponent } from './views/not-found/not-found.component';
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
-import {MatButtonModule} from "@angular/material/button";
+import { MatButtonModule } from "@angular/material/button";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import {NgIf} from "@angular/common";
+import { NgIf } from "@angular/common";
 import { HomeComponent } from './views/home/home.component';
-import {MatToolbarModule} from "@angular/material/toolbar";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { NewCreditComponent } from './views/new-credit/new-credit.component';
+import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     LoginComponent,
     RegisterComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    NewCreditComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
