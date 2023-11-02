@@ -18,6 +18,7 @@ import { HomeComponent } from './views/home/home.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { NewCreditComponent } from './views/new-credit/new-credit.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
     ReactiveFormsModule,
     FormsModule,
     NgIf,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

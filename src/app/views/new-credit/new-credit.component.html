@@ -1,2 +1,74 @@
-<p>new-credit works!</p>
+<div class="main">
+  <div class="header">
+    <app-toolbar></app-toolbar>
+  </div>
+  <div class="content">
+    <mat-card class="new-credit-card">
+      <mat-card-header>
+        <mat-card-title>Nuevo crédito</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="card-content">
+        <mat-form-field>
+          <mat-label>Ingresa el tipo de moneda</mat-label>
+          <mat-select>
+            <mat-option value="soles">Soles (S/.)</mat-option>
+            <mat-option value="dollars">Dólares ($)</mat-option>
+            <mat-option value="euros">Euros (€)</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el precio del vehiculo</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el número de cuotas</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el monto de la cuota inicial</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el intervalo de tiempo a pagar</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Url de la imagen del vehículo</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el tipo de periodo de gracia</mat-label>
+          <mat-select>
+            <mat-option value="partial">Parcial</mat-option>
+            <mat-option value="complete">Completa</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el tiempo del periodo de gracia</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingrese el tipo de tasa de interés</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingrese la tasa de interés</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa la fecha inicial</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa la fecha final</mat-label>
+          <input matInput required>
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="footer">
+    <a class="confirm-button" mat-raised-button color="accent" routerLink="/home">Crear crédito</a>
+    <a class="cancel-button" mat-raised-button color="warn" routerLink="/home">Cancelar</a>
 
+  </div>
+</div>
