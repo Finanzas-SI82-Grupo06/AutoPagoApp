@@ -19,6 +19,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { NewCreditComponent } from './views/new-credit/new-credit.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import {MatSelectModule} from "@angular/material/select";
+import { CreditsComponent } from './views/credits/credits.component';
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {MatSelectModule} from "@angular/material/select";
     NotFoundComponent,
     HomeComponent,
     NewCreditComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import {MatSelectModule} from "@angular/material/select";
     FormsModule,
     NgIf,
     MatSelectModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
