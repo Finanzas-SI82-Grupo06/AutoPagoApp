@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Validations} from "../../utils/validations";
 
 @Component({
   selector: 'app-new-credit',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-credit.component.scss']
 })
 export class NewCreditComponent {
-
+  validations = new Validations();
 }
