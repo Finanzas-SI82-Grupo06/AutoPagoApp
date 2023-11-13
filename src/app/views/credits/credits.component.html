@@ -1,0 +1,79 @@
+<div class="main">
+  <div class="header">
+    <app-toolbar></app-toolbar>
+  </div>
+  <div class="content">
+    <table mat-table class="credit-table">
+      <ng-container matColumnDef="fee-number">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="grace-period">
+        <th mat-header-cell *matHeaderCellDef>P.G.</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-initial-balance">
+        <th mat-header-cell *matHeaderCellDef>Saldo inicial cuota final</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-interest">
+        <th mat-header-cell *matHeaderCellDef>Interés cuota final</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-amort">
+        <th mat-header-cell *matHeaderCellDef>Amort. cuota final</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-life-insurance">
+        <th mat-header-cell *matHeaderCellDef>Seguro desg. cuota final</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-final-balance">
+        <th mat-header-cell *matHeaderCellDef>Saldo final cuota final</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="interest">
+        <th mat-header-cell *matHeaderCellDef>Interés</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="fee">
+        <th mat-header-cell *matHeaderCellDef>Cuota</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="amortization">
+        <th mat-header-cell *matHeaderCellDef>Amort.</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="fee-life-insurance">
+        <th mat-header-cell *matHeaderCellDef>Seguro desg. cuota</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="risk-insurance">
+        <th mat-header-cell *matHeaderCellDef>Seguro riesgo</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="gps">
+        <th mat-header-cell *matHeaderCellDef>GPS</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="ports">
+        <th mat-header-cell *matHeaderCellDef>Portes</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="admin-bills">
+        <th mat-header-cell *matHeaderCellDef>Gastos adm.</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="fee-final-balance">
+        <th mat-header-cell *matHeaderCellDef>Saldo final para cuota</th>
+        <td mat-cell></td>
+      </ng-container>
+      <ng-container matColumnDef="flow">
+        <th mat-header-cell *matHeaderCellDef>Flujo</th>
+        <td mat-cell></td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>
