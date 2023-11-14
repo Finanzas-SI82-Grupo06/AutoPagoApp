@@ -27,7 +27,10 @@
   padding-top: 50px;
 }
 
-.footer > a {
+.footer > a,
+.footer > button{
   text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
   margin: 0 10px;
 }

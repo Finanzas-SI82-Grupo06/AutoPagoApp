@@ -18,18 +18,18 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el precio del vehiculo</mat-label>
-          <input type="number" matInput [formControl]="validations.vehiclePrice" required>
-          <mat-error *ngIf="validations.vehiclePrice.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('vehiclePrice')" required>
+          <mat-error *ngIf="creditForm.get('vehiclePrice').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el número de cuotas</mat-label>
-          <input type="number" matInput [formControl]="validations.feeNumber" required>
-          <mat-error *ngIf="validations.feeNumber.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('feeNumber')" required>
+          <mat-error *ngIf="creditForm.get('feeNumber').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el monto de la cuota inicial</mat-label>
-          <input type="number" matInput [formControl]="validations.initialFeeAmount" required>
-          <mat-error *ngIf="validations.initialFeeAmount.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('initialFeeAmount')" required>
+          <mat-error *ngIf="creditForm.get('initialFeeAmount').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el intervalo de tiempo a pagar</mat-label>
@@ -37,8 +37,8 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Url de la imagen del vehículo</mat-label>
-          <input matInput [formControl]="validations.url" required>
-          <mat-error *ngIf="validations.url.invalid">{{validations.getStringErrorMessage()}}</mat-error>
+          <input matInput [formControl]="creditForm.get('url')" required>
+          <mat-error *ngIf="creditForm.get('url').invalid">{{getStringErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el tipo de periodo de gracia</mat-label>
@@ -49,8 +49,8 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el número de cuotas con periodo de gracia</mat-label>
-          <input type="number" matInput [formControl]="validations.gracePeriod" required>
-          <mat-error *ngIf="validations.gracePeriod.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('gracePeriodFeeNumber')" required>
+          <mat-error *ngIf="creditForm.get('gracePeriodFeeNumber').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el tipo de tasa de interés</mat-label>
@@ -61,59 +61,62 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa la tasa de interés</mat-label>
-          <input type="number" matInput [formControl]="validations.interestRatePercentage" required>
-          <mat-error *ngIf="validations.interestRatePercentage.invalid">{{validations.getPercentageRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('interestRatePercentage')" required>
+          <mat-error
+            *ngIf="creditForm.get('interestRatePercentage').invalid">{{getPercentageRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Costes notariales</mat-label>
-          <input type="number" matInput [formControl]="validations.notarialCosts" required>
-          <mat-error *ngIf="validations.notarialCosts.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('notarialCosts')" required>
+          <mat-error *ngIf="creditForm.get('notarialCosts').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Costes registrales</mat-label>
-          <input type="number" matInput [formControl]="validations.registerCosts" required>
-          <mat-error *ngIf="validations.registerCosts.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('registerCosts')" required>
+          <mat-error *ngIf="creditForm.get('registerCosts').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>GPS</mat-label>
-          <input type="number" matInput [formControl]="validations.gps" required>
-          <mat-error *ngIf="validations.gps.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('gps')" required>
+          <mat-error *ngIf="creditForm.get('gps').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Portes</mat-label>
-          <input type="number" matInput [formControl]="validations.ports" required>
-          <mat-error *ngIf="validations.ports.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('ports')" required>
+          <mat-error *ngIf="creditForm.get('ports').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Gastos de administración</mat-label>
-          <input type="number" matInput [formControl]="validations.administrationBills" required>
-          <mat-error *ngIf="validations.administrationBills.invalid">{{validations.getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('administrationBills')" required>
+          <mat-error *ngIf="creditForm.get('administrationBills').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>% de seguro de desgravamen</mat-label>
-          <input type="number" matInput [formControl]="validations.lifeInsurancePercentage" required>
-          <mat-error *ngIf="validations.lifeInsurancePercentage.invalid">{{validations.getPercentageRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('lifeInsurancePercentage')" required>
+          <mat-error
+            *ngIf="creditForm.get('lifeInsurancePercentage').invalid">{{getPercentageRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>% de seguro riesgo</mat-label>
-          <input type="number" matInput [formControl]="validations.riskInsurancePercentage" required>
-          <mat-error *ngIf="validations.riskInsurancePercentage.invalid">{{validations.getPercentageRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('riskInsurancePercentage')" required>
+          <mat-error
+            *ngIf="creditForm.get('riskInsurancePercentage').invalid">{{getPercentageRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa la fecha inicial</mat-label>
-          <input type="date" matInput [formControl]="validations.initialDate" required>
-          <mat-error *ngIf="validations.initialDate.invalid">{{validations.getDateErrorMessage()}}</mat-error>
+          <input type="date" matInput [formControl]="creditForm.get('initialDate')" required>
+          <mat-error *ngIf="creditForm.get('initialDate').invalid">{{getDateErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa la fecha final</mat-label>
-          <input type="date" matInput [formControl]="validations.finalDate" required>
-          <mat-error *ngIf="validations.finalDate.invalid">{{validations.getDateErrorMessage()}}</mat-error>
+          <input type="date" matInput [formControl]="creditForm.get('finalDate')" required>
+          <mat-error *ngIf="creditForm.get('finalDate').invalid">{{getDateErrorMessage()}}</mat-error>
         </mat-form-field>
       </mat-card-content>
     </mat-card>
   </div>
   <div class="footer">
-    <a class="confirm-button" mat-raised-button color="accent" routerLink="/home">Crear crédito</a>
+    <button class="confirm-button" mat-raised-button color="accent" (click)="createCredit()" routerLink="/home">Crear crédito</button>
     <a class="cancel-button" mat-raised-button color="warn" routerLink="/home">Cancelar</a>
   </div>
 </div>
