@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {Credit} from "../../models/credit";
 import {Router} from "@angular/router";
 
 @Component({
