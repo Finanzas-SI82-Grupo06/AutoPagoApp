@@ -1,20 +1,21 @@
 export class Credit {
+  id: number = 0;
   currency: string = '';
-  vehiclePrice: number | null = null;
-  feeNumber: number | null = null;
-  initialFeeAmount: number | null = null;
+  vehiclePrice: number = 0;
+  feeNumber: number = 0;
+  initialFeeAmount: number = 0;
   url: string = '';
   gracePeriodType: string = '';
-  gracePeriodFeeNumber: number | null = null;
+  gracePeriodFeeNumber: number = 0;
   interestRateType: string = '';
-  interestRatePercentage: number | null = null;
-  notarialCosts: number | null = null;
-  registerCosts: number | null = null;
-  gps: number | null = null;
-  ports: number | null = null;
-  administrationBills: number | null = null;
-  lifeInsurancePercentage: number | null = null;
-  riskInsurancePercentage: number | null = null;
+  interestRatePercentage: number = 0;
+  notarialCosts: number = 0;
+  registerCosts: number = 0;
+  gps: number = 0;
+  ports: number = 0;
+  administrationBills: number = 0;
+  lifeInsurancePercentage: number = 0;
+  riskInsurancePercentage: number = 0;
   initialDate: Date | null = null;
   finalDate: Date | null = null;
 

@@ -21,6 +21,11 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import {MatSelectModule} from "@angular/material/select";
 import { CreditsComponent } from './views/credits/credits.component';
 import {MatTableModule} from "@angular/material/table";
+import {HttpClientModule} from "@angular/common/http";
+import { CreditsContentComponent } from './views/credits-content/credits-content.component';
+import { CreditCardContentComponent } from './views/credit-card-content/credit-card-content.component';
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -31,7 +36,9 @@ import {MatTableModule} from "@angular/material/table";
     HomeComponent,
     NewCreditComponent,
     ToolbarComponent,
-    CreditsComponent
+    CreditsComponent,
+    CreditsContentComponent,
+    CreditCardContentComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +55,9 @@ import {MatTableModule} from "@angular/material/table";
     NgIf,
     MatSelectModule,
     MatTableModule,
+    HttpClientModule,
+    MatGridListModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

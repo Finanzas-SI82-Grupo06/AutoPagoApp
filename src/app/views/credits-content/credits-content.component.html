@@ -1,0 +1,14 @@
+<div class="content">
+  <h1 class="content-title">Available products</h1>
+  <div>
+    <ng-container *ngFor="let credit of pagedList" class="grid-title">
+      <app-credit-card-content [credit]="credit"></app-credit-card-content>
+    </ng-container>
+  </div>
+  <mat-paginator [length]="length"
+                 [pageSize]="pageSize"
+                 [pageSizeOptions]="pageSizeOptions"
+                 [hidePageSize]=true
+                 (page)="OnPageChange($event)">
+  </mat-paginator>
+</div>
