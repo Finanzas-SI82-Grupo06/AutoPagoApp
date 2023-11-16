@@ -1,6 +1,10 @@
-<div class="content">
-  <h1 class="content-title">Available products</h1>
-  <div>
+<div>
+  <h3 class="content-title">
+    <mat-toolbar>
+      <span>Available products</span>
+    </mat-toolbar>
+  </h3>
+  <div class="content card-container">
     <ng-container *ngFor="let credit of pagedList" class="grid-title">
       <app-credit-card-content [credit]="credit"></app-credit-card-content>
     </ng-container>

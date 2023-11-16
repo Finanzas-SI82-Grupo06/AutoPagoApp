@@ -26,6 +26,7 @@ import { CreditsContentComponent } from './views/credits-content/credits-content
 import { CreditCardContentComponent } from './views/credit-card-content/credit-card-content.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     MatTableModule,
     HttpClientModule,
     MatGridListModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,15 +16,8 @@ export class CreditsContentComponent {
   length: number = 0;
   pageSize: number = 6;
   pageSizeOptions: number[] = [3, 6, 9, 12];
-  //visible: boolean = false;
 
-  constructor(private creditsService: CreditService, private router: Router) {
-  }
-
-  //toggleCardVisibility(){
-  //  this.visible = !this.visible;
-  // }
-
+  constructor (private creditsService: CreditService, private router: Router) { }
   navigateToCreditDetails(id: number) {
     this.router.navigate(['credits/', id]);
   }
