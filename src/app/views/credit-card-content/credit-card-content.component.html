@@ -1,6 +1,6 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title>Plan: {{credit.id}}</mat-card-title>
+    <mat-card-title><b>Plan: {{credit.id}}</b></mat-card-title>
   </mat-card-header>
   <br>
   <img mat-card-image src="{{credit.url}}" alt="car picture" class="car-image">
@@ -10,6 +10,8 @@
     <p>Inicial: {{credit.initialFeeAmount}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="viewCreditDetails(credit.id)"><b>VER PLAN</b></button>
+    <button mat-raised-button color="primary" (click)="viewCreditDetails(credit.id)">
+      <b style="color: white">VER PLAN</b>
+    </button>
   </mat-card-actions>
 </mat-card>

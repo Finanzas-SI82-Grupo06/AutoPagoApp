@@ -1,18 +1,19 @@
-<div>
-  <h3 class="content-title">
-    <mat-toolbar>
-      <span>Available products</span>
-    </mat-toolbar>
-  </h3>
-  <div class="content card-container">
-    <ng-container *ngFor="let credit of pagedList" class="grid-title">
-      <app-credit-card-content [credit]="credit"></app-credit-card-content>
-    </ng-container>
+<div class="main">
+  <div class="header">
+    <app-toolbar></app-toolbar>
   </div>
-  <mat-paginator [length]="length"
-                 [pageSize]="pageSize"
-                 [pageSizeOptions]="pageSizeOptions"
-                 [hidePageSize]=true
-                 (page)="OnPageChange($event)">
-  </mat-paginator>
+  <div class="content">
+    <br>
+    <div class="card-container">
+      <ng-container *ngFor="let credit of pagedList" class="grid-title">
+        <app-credit-card-content [credit]="credit"></app-credit-card-content>
+      </ng-container>
+    </div>
+    <mat-paginator [length]="length"
+                   [pageSize]="pageSize"
+                   [pageSizeOptions]="pageSizeOptions"
+                   [hidePageSize]=true
+                   (page)="OnPageChange($event)">
+    </mat-paginator>
+  </div>
 </div>

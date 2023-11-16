@@ -1,4 +1,181 @@
+.custom-header {
+    height: 70vh;
+    background: url('https://images.pexels.com/photos/248704/pexels-photo-248704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    background-position: center bottom;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
 
+.custom-header h1,
+.custom-header mat-card-subtitle h3 {
+  color: white;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.custom-header h1{
+    font-weight: 0;
+}
+
+.custom-header mat-card-subtitle h3{
+    font-weight: 100;
+}
+
+.car-credit {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.car-credit-content {
+  max-width: 100%;
+  text-align: center;
+}
+.car-credit-ben {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.car-credit-ben-li {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.car-credit-ben-li ul li {
+  padding: 5px;
+}
+
+.car-credit-img {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.car-credit-img img {
+  width: 100%;
+  border-radius: 50%;
+  clip-path: ellipse(85% 100% at 50% 50%);
+}
+
+.smart-buy {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.smart-buy-content {
+  max-width: 100%;
+  text-align: center;
+}
+
+.smart-buy-ben {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.smart-buy-ben-li {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.smart-buy-ben-li ul li {
+  padding: 5px;
+}
+
+.smart-buy-img {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.smart-buy-img img {
+  width: 100%;
+  border-radius: 60%;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+}
+.about-autopago {
+  text-align: center;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.autopago-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item img {
+  width: 100px;
+  border-radius: 50%;
+  background-color: #e4b2b2;
+  padding: 10px;
+}
+
+.info-item p {
+  margin-top: 5px;
+}
+.mat-card-content {
+  padding: 15px;
+}
+
+.about-autopago,
+.car-credit,
+.smart-buy {
+  background-color: rgba(212, 241, 212, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.car-credit, .about-autopago {
+    background-color: #fff;
+}
+
+.footer {
+  background: rgba(29, 32, 29, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .smart-buy-ben-li,
+  .smart-buy-img {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-credit-ben-li,
+  .car-credit-img {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .autopago-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 
