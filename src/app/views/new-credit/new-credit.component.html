@@ -10,7 +10,7 @@
       <mat-card-content class="card-content">
         <mat-form-field>
           <mat-label>Ingresa el tipo de moneda</mat-label>
-          <mat-select required>
+          <mat-select  [formControl]="creditForm.get('currency')" required>
             <mat-option value="soles">Soles (S/.)</mat-option>
             <mat-option value="dollars">Dólares ($)</mat-option>
             <mat-option value="euros">Euros (€)</mat-option>
@@ -42,7 +42,7 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el tipo de periodo de gracia</mat-label>
-          <mat-select>
+          <mat-select [formControl]="creditForm.get('gracePeriodType')" required>
             <mat-option value="partial">Parcial</mat-option>
             <mat-option value="complete">Completo</mat-option>
           </mat-select>
@@ -54,7 +54,7 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa el tipo de tasa de interés</mat-label>
-          <mat-select>
+          <mat-select [formControl]="creditForm.get('interestRateType')">
             <mat-option value="nominal">Nominal</mat-option>
             <mat-option value="effective">Efectiva</mat-option>
           </mat-select>
@@ -101,6 +101,12 @@
           <input type="number" matInput [formControl]="creditForm.get('riskInsurancePercentage')" required>
           <mat-error
             *ngIf="creditForm.get('riskInsurancePercentage').invalid">{{getPercentageRangeErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>% de costo de oportunidad del capital</mat-label>
+          <input type="number" matInput [formControl]="creditForm.get('cok')" required>
+          <mat-error
+                  *ngIf="creditForm.get('riskInsurancePercentage').invalid">{{getPercentageRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Ingresa la fecha inicial</mat-label>

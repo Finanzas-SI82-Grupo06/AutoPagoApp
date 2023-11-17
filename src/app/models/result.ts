@@ -1,5 +1,8 @@
 export class Result {
   id: number;
+  n: number;
+  graceType: string;
+  cok: number;
   interest: number;
   lifeInsurance: number;
   fee: number;
@@ -15,6 +18,9 @@ export class Result {
 
   constructor() {
     this.id = 0;
+    this.n = 0;
+    this.graceType = '';
+    this.cok = 0;
     this.interest = 0;
     this.lifeInsurance = 0;
     this.fee = 0;

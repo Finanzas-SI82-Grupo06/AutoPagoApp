@@ -16,6 +16,7 @@ export class Credit {
   administrationBills: number = 0;
   lifeInsurancePercentage: number = 0;
   riskInsurancePercentage: number = 0;
+  cok: number = 0;
   initialDate: Date | null = null;
   finalDate: Date | null = null;
 
