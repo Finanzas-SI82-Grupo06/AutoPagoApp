@@ -32,10 +32,6 @@
           <mat-error *ngIf="creditForm.get('initialFeeAmount').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
-          <mat-label>Ingresa el intervalo de tiempo a pagar</mat-label>
-          <input matInput required>
-        </mat-form-field>
-        <mat-form-field>
           <mat-label>Url de la imagen del vehículo</mat-label>
           <input matInput [formControl]="creditForm.get('url')" required>
           <mat-error *ngIf="creditForm.get('url').invalid">{{getStringErrorMessage()}}</mat-error>
