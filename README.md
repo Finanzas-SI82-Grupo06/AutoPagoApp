@@ -1,27 +1,50 @@
-# AutoPago
+<div align="center">
+  <h3 align="center">AutoPago - Aplicación de compra inteligente</h3>
+  <p align="center">Finanzas e Ingeniería Económica · Grupo 06 · 2023-02</p>
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+---
 
-## Development server
+Bienvenido a **AutoPago**, la aplicación que te ayudará a tener una excelente organización de tus finanzas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Acerca de AutoPago
 
-## Code scaffolding
+AutoPago es un aplicación web que busca dar las cómodidades y facilidades a nuestros clientes con respecto a su planeación económica a la hora de querer comprar un vehículo. Esta aplicación ayuda a que nuestros usuarios puedan organizar y preveer sus pagos de mejor manera, logrando que puedan tener mayor control sobre sus decisiones financieras.
+## Cómo funciona
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**1. Regístrate o inicia sesión:**
 
-## Build
+-   Crea una cuenta para AutoPago o inicia sesión con un correo electrónico válido y una contraseña.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**2. Planifica tus pagos con nuestra creación de planes personalizados:**
 
-## Running unit tests
+-   Ingresa todos los datos del cronograma de pagos para que podamos calcular los resultados.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**3. Revisa el plan de pagos calculado:**
 
-## Running end-to-end tests
+-   Con los datos registrados se podrá visualizar una tabla detallada con todos los costos y pagos necesarios.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Por qué escoger AutoPago
 
-## Further help
+Nuestra misión es dar la manera más sencilla de poder gestionar las decisiones financieras a nuestros usuarios. Creemos que con nuestra aplicación, más personas podrán entender mejor cómo funciona la compra inteligente.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**2023 © AutoPago - Todos los derechos reservados**
+
+## Acerca del proyecto
+
+Esta es una aplicación web desarrollada con el framework Angular. Es un proyecto del curso "Finanzas e Ingeniería Económica" de la Universidad Peruana de Ciencias Aplicadas (Lima, Perú).
+
+<div align="center">
+  <p>AutoPago - Aplicación de compra inteligente</p>
+</div>
+
+---
+
+## Colaboradores
+
+-   Jorge Enrique Gonzales Carrión
+-   Paolo Andre Espejo Macuri
+-   Shayla Lussiné Choque Puma
+-   Josue Ramos Ramírez
+-   Lorenzo Navarro Robles
+
