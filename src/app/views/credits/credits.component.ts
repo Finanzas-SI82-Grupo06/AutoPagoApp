@@ -4,6 +4,8 @@ import {CreditService} from "../../services/credit.service";
 import {ResultsService} from "../../services/results.service";
 import {Result} from "../../models/result";
 import {MatTableDataSource} from "@angular/material/table";
+import {VanTirDialogComponent} from "../van-tir-dialog/van-tir-dialog.component";
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-credits',
@@ -75,6 +77,7 @@ export class CreditsComponent {
       });
     });
   }
+  
 
   calcularTIR(flujosDeEfectivo: number[], estimacionTasa: number, tolerancia: number, maxIteraciones: number): any {
     let tir = estimacionTasa;
@@ -95,5 +98,13 @@ export class CreditsComponent {
       }
     }
     return null;
+  }
+   openDialog(): void {
+    const dialogRef = this.dialog.open(VanTirDialogComponent, {
+      data: {tir: this.tir, van: this.finalVan}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 }
