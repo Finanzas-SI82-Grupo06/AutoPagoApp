@@ -27,9 +27,14 @@
           <mat-error *ngIf="creditForm.get('feeNumber').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
-          <mat-label>Ingresa el monto de la cuota inicial</mat-label>
-          <input type="number" matInput [formControl]="creditForm.get('initialFeeAmount')" required>
-          <mat-error *ngIf="creditForm.get('initialFeeAmount').invalid">{{getRangeErrorMessage()}}</mat-error>
+          <mat-label>Ingresa el porcentaje de la cuota inicial</mat-label>
+          <input type="number" matInput [formControl]="creditForm.get('initialFeePercentage')" required>
+          <mat-error *ngIf="creditForm.get('initialFeePercentage').invalid">{{getRangeErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ingresa el porcentaje de la cuota final</mat-label>
+          <input type="number" matInput [formControl]="creditForm.get('finalFeePercentage')" required>
+          <mat-error *ngIf="creditForm.get('finalFeePercentage').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Url de la imagen del vehículo</mat-label>
@@ -63,13 +68,13 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Costes notariales</mat-label>
-          <input type="number" matInput [formControl]="creditForm.get('notarialCosts')" required>
-          <mat-error *ngIf="creditForm.get('notarialCosts').invalid">{{getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('notarialCost')" required>
+          <mat-error *ngIf="creditForm.get('notarialCost').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>Costes registrales</mat-label>
-          <input type="number" matInput [formControl]="creditForm.get('registerCosts')" required>
-          <mat-error *ngIf="creditForm.get('registerCosts').invalid">{{getRangeErrorMessage()}}</mat-error>
+          <input type="number" matInput [formControl]="creditForm.get('registerCost')" required>
+          <mat-error *ngIf="creditForm.get('registerCost').invalid">{{getRangeErrorMessage()}}</mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>GPS</mat-label>

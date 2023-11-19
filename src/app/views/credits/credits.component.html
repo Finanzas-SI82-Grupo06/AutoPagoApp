@@ -9,6 +9,26 @@
         <td mat-cell *matCellDef="let element">{{element.graceType}}</td>
       </ng-container>
       <ng-container matColumnDef="final-fee-initial-balance">
+        <th mat-header-cell *matHeaderCellDef>Saldo inicial Cuota Final</th>
+        <td mat-cell *matCellDef="let element">{{element.balanceFinalFee}}</td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-interest">
+        <th mat-header-cell *matHeaderCellDef>Interes Cuota Final</th>
+        <td mat-cell *matCellDef="let element">{{element.interestFinalFee}}</td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-amortization">
+        <th mat-header-cell *matHeaderCellDef>Amortización Cuota Final</th>
+        <td mat-cell *matCellDef="let element">{{element.amortizationFinalFee}}</td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-life-insurance">
+        <th mat-header-cell *matHeaderCellDef>Seguro Desgravamen Cuota Final</th>
+        <td mat-cell *matCellDef="let element">{{element.lifeInsuranceFinalFee}}</td>
+      </ng-container>
+      <ng-container matColumnDef="final-fee-final-balance">
+        <th mat-header-cell *matHeaderCellDef>Seguro Desgravamen Cuota Final</th>
+        <td mat-cell *matCellDef="let element">{{element.finalBalanceFinalFee}}</td>
+      </ng-container>
+      <ng-container matColumnDef="initial-balance">
         <th mat-header-cell *matHeaderCellDef>Saldo inicial</th>
         <td mat-cell *matCellDef="let element">{{element.balance}}</td>
       </ng-container>
@@ -61,6 +81,7 @@
       <mat-card-subtitle>Resultados</mat-card-subtitle>
       <p>VAN: {{finalVan}}</p>
       <p>TIR: {{tir}}%</p>
+      <p>TCEA: {{tcea}}%</p>
     </mat-card>
   </div>
 </div>

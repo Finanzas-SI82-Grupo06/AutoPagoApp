@@ -3,6 +3,11 @@ export class Result {
   n: number;
   graceType: string;
   cok: number;
+  balanceFinalFee: number;
+  interestFinalFee: number;
+  amortizationFinalFee: number;
+  lifeInsuranceFinalFee: number;
+  finalBalanceFinalFee: number;
   interest: number;
   lifeInsurance: number;
   fee: number;
@@ -21,6 +26,11 @@ export class Result {
     this.n = 0;
     this.graceType = '';
     this.cok = 0;
+    this.balanceFinalFee = 0;
+    this.interestFinalFee = 0;
+    this.amortizationFinalFee = 0;
+    this.lifeInsuranceFinalFee = 0;
+    this.finalBalanceFinalFee = 0;
     this.interest = 0;
     this.lifeInsurance = 0;
     this.fee = 0;
