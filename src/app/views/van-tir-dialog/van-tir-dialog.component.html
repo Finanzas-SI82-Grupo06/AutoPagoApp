@@ -13,6 +13,7 @@
   <div mat-dialog-content>
     <p>El VAN es: <span [class]="data.van < 0 ? 'negative' : 'positive'">{{data.van}}</span></p>
     <p>La TIR es: <span [class]="data.tir < 0 ? 'negative' : 'positive'">{{data.tir}}%</span></p>
+    <p>La TCEA es: <span [class]="data.tcea < 0 ? 'negative' : 'positive'">{{data.tcea}}%</span></p>
   </div>
   <mat-divider></mat-divider>
   <div mat-dialog-actions class="dialog-actions">
