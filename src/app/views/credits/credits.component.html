@@ -2,6 +2,10 @@
   <div class="header">
     <app-toolbar></app-toolbar>
   </div>
+  <div class="credit-action">
+    <h3>Cronograma de pago</h3>
+    <button mat-raised-button (click)="openDialog()">VER RENTABILIDAD</button>
+  </div>
   <div class="content">
     <table mat-table [dataSource]="dataSource"  class="credit-table">
       <ng-container matColumnDef="grace-period">
