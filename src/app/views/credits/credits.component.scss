@@ -9,3 +9,23 @@
   overflow-x: auto;
   align-self: center;
 }
+
+.credit-table th {
+  background-color: #2d572c;
+  color: white;
+}
+.credit-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.credit-table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.credit-action {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
