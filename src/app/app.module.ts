@@ -27,6 +27,7 @@ import { CreditCardContentComponent } from './views/credit-card-content/credit-c
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatDividerModule} from '@angular/material/divider';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import {MatDividerModule} from '@angular/material/divider';
     HttpClientModule,
     MatGridListModule,
     MatPaginatorModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
