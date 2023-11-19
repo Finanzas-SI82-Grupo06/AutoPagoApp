@@ -1,6 +1,6 @@
 .custom-header {
-    height: 70vh;
-    background: url('https://images.pexels.com/photos/248704/pexels-photo-248704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    height: 90vh;
+    background: url('https://images.pexels.com/photos/4024490/pexels-photo-4024490.jpeg') center/cover no-repeat;
     background-position: center bottom;
     color: white;
     display: flex;
@@ -15,7 +15,7 @@
   color: white;
   margin: 0;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.700);
   width: 100%;
 }
 
@@ -27,15 +27,51 @@
     font-weight: 100;
 }
 
+.call-to-action-button {
+  font-size: medium; 
+  font-weight: bolder;
+  
+}
+
+.about-autopago,
+.car-credit,
+.smart-buy {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.about-autopago {
+  text-align: center;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.autopago-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item img {
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(71, 139, 89, 0.507);
+  padding: 10px;
+}
+
+.info-item p {
+  margin-top: 5px;
+}
+
 .car-credit {
   max-width: 80%;
   margin: 0 auto;
 }
 
-.car-credit-content {
-  max-width: 100%;
-  text-align: center;
-}
 .car-credit-ben {
   display: flex;
   flex-wrap: wrap;
@@ -48,9 +84,6 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.car-credit-ben-li ul li {
-  padding: 5px;
-}
 
 .car-credit-img {
   flex: 1;
@@ -61,8 +94,9 @@
 
 .car-credit-img img {
   width: 100%;
-  border-radius: 50%;
-  clip-path: ellipse(85% 100% at 50% 50%);
+  height: 50% ;
+  border-radius: 20%;
+
 }
 
 .smart-buy {
@@ -101,54 +135,20 @@
 
 .smart-buy-img img {
   width: 100%;
-  border-radius: 60%;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-}
-.about-autopago {
-  text-align: center;
-  max-width: 80%;
-  margin: 20px auto;
+  border-radius: 100%;
+  padding-left: -30px;
 }
 
-.autopago-info {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
 
-.info-item {
-  text-align: center;
-}
 
-.info-item img {
-  width: 100px;
-  border-radius: 50%;
-  background-color: #e4b2b2;
-  padding: 10px;
-}
-
-.info-item p {
-  margin-top: 5px;
-}
 .mat-card-content {
   padding: 15px;
 }
 
-.about-autopago,
-.car-credit,
-.smart-buy {
-  background-color: rgba(212, 241, 212, 0.5);
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.car-credit, .about-autopago {
-    background-color: #fff;
-}
 
 .footer {
-  background: rgba(29, 32, 29, 0.5);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  color: #525252;
   padding: 20px;
   text-align: center;
 }
@@ -176,7 +176,3 @@
     align-items: center;
   }
 }
-
-
-
-
