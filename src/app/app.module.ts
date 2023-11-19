@@ -24,6 +24,7 @@ import {MatTableModule} from "@angular/material/table";
 import {HttpClientModule} from "@angular/common/http";
 import { CreditsContentComponent } from './views/credits-content/credits-content.component';
 import { CreditCardContentComponent } from './views/credit-card-content/credit-card-content.component';
+import { VanTirDialogComponent } from './views/van-tir-dialog/van-tir-dialog.component';
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatDividerModule} from '@angular/material/divider';
@@ -40,7 +41,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     ToolbarComponent,
     CreditsComponent,
     CreditsContentComponent,
-    CreditCardContentComponent
+    CreditCardContentComponent,
+    VanTirDialogComponent
   ],
   imports: [
     BrowserModule,
