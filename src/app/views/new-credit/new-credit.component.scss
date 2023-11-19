@@ -7,18 +7,52 @@
   padding: 20px;
 }
 
-.new-credit-card mat-card-header {
-  padding-left: 30px;
-  font-size: 1.2rem;
+mat-card { 
+  gap: 20px;  
 }
 
+.new-credit-card mat-card-header {
+  // padding-left: 30px;
+  font-size: 1.6rem;
+}
+ 
 .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card-content > .form-category > span { 
+  font-size: 1.1rem;
+}
+
+.card-content > .form-category > span { 
+  position: absolute;
+  padding-inline: 8px;
+  top: -10px;
+  left: 15px;
+  font-weight: 500;
+  z-index: 99;
+  color: rgb(143, 140, 140);
+  background: #fff;
+}
+
+.card-content > .form-category { 
+  border: 2px solid rgb(203, 203, 203);
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-inline: 10px;
+  position: relative;
+}
+
+.card-content > .form-category > .form-group {
   display: grid;
+  column-gap: 25px;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .card-content mat-form-field {
-  padding: 10px;
+  padding-block: 10px;
 }
 
 .footer {
