@@ -1,0 +1,21 @@
+<div class="van-tir-dialog">
+  <div class="dialog-header">
+    <h3 mat-dialog-title><b>Indicadores de rentabilidad</b></h3>
+    <div class="spacer"></div>
+    <div *ngIf="data.van >= 0; else negativeMessage" class="tag-good">
+      Good
+    </div>
+    <ng-template #negativeMessage>
+      <div class="tag-bad">Bad</div>
+    </ng-template>
+  </div>
+  <mat-divider></mat-divider>
+  <div mat-dialog-content>
+    <p>El VAN es: <span [class]="data.van < 0 ? 'negative' : 'positive'">{{data.van}}</span></p>
+    <p>La TIR es: <span [class]="data.tir < 0 ? 'negative' : 'positive'">{{data.tir}}%</span></p>
+  </div>
+  <mat-divider></mat-divider>
+  <div mat-dialog-actions class="dialog-actions">
+    <button mat-raised-button color="warn" (click)="onNoClick()">Cerrar</button>
+  </div>
+</div>
