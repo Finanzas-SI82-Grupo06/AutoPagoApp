@@ -2,7 +2,10 @@
     width: 30vw; 
     height: 15vw;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 .example-card{
     background-color:rgba(169, 169, 169, 0.24);
+    margin: 5px;
 }
